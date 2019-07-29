@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d web"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "homepage": "https://jamal-bahammou.github.io/fruitApp",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
