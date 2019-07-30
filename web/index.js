@@ -2,6 +2,8 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url')
 
+var PORT = process.env.PORT || 5000;
+
 const replaceTemplate = require('./modules/replaceTemplate');
 
 // SERVER: ----------------------------------------------------------------
@@ -66,6 +68,6 @@ const server = http.createServer((req, res) => {
 // server.listen(8000, '127.0.0.1', () => {
 //    console.log('Listening to requests on port 8000');
 // })
-server.listen(80, 'fruitApp', () => {
+server.listen(PORT, () => {
    console.log('Listening to requests on port 8000');
 })
